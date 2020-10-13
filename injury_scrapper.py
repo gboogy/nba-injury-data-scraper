@@ -30,8 +30,8 @@ char_replace = {' • ': ''}
 list_of_rows = []
 
 # Loop through webpage table, scrap data, and store lists
-for i in range(0, 11250, 25):
-    url = 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=&Team=&BeginDate=2010-10-01&EndDate=&InjuriesChkBx=yes&Submit=Search&start={}'.format(
+for i in range(0, 27125, 25):
+    url = 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=&Team=&BeginDate=2010-10-01&EndDate=&ILChkBx=yes&InjuriesChkBx=yes&Submit=Search&start={}'.format(
         i)
     response = requests.get(url)
     html = response.content
